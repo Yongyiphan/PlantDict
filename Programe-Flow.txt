@@ -1,0 +1,60 @@
+
+How the program should work
+
+Requirements as per assignment details
+
+1) Display all plant records according to
+    alphabetical order or
+    timestamp
+
+2:) Allow user to search for plants
+    If plant exists: Disply record information
+
+    Else: Allow for creation of plant record
+
+3:) Allow user to add new plant and its description
+
+4:) Allow user to update information about the plant
+    Including Plant name and 
+              Plant description
+
+5: Allow User to delete entire plant records
+    
+
+PROGRAM FLOW
+
+Program starts
+
+P: Display Main menu with options
+    1: Display all plant records
+    2: Search for plant
+    3: Edit plant records
+
+MM Option 1: 
+    Display records by 
+        timestamp or
+        alphabetical order
+
+MM Option 2: 
+    Ask for user input <-- plant name (dont need to be fully spelled)
+    Iterate through plantDict.keys() <-- the plant names
+        --> Compare user input with plantDict.keys()
+        Return result
+        
+        If matach --> print out specific plant record from plantDict
+        If plant not found 
+            --> Print status e.g "Plant not found"
+            --> Provide an option to add new plant record
+                --> Re-direct to "editRecord section"
+        If Plant found
+            --> Print status
+            --> Provide option to add / delete descriptions or 
+                Delete whole record of specific plant
+        
+
+MM option 3:
+    Editing menu
+    Provides options for
+    --1 Adding New Plant
+    --2 Modifying Existing Plants
+    --3 Delete Entire Plant records
